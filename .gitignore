@@ -365,3 +365,6 @@ FodyWeavers.xsd
 
 # PDF
 *.pdf
+
+# drawio
+*.drawio
