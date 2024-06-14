@@ -265,7 +265,7 @@ ServiceFabricBackup/
 *.mdf
 *.ldf
 *.ndf
-*.sql
+.sql
 
 # Business Intelligence projects
 *.rdl.data
@@ -364,4 +364,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # PDF
-* .pdf
+.pdf
