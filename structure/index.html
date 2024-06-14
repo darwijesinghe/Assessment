@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+    <title>Employee</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="header_content container flex">
+            <h3 class="app_logo">ASSESSMENT</h3>
+            <div class="pages">
+                <a href="#?" class="pg_link link_button" role="link">Calculation</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- data table -->
+        <section class="section container">
+            <!-- alert -->
+            <div id="alert-message"></div>
+            <h3 class="section_tit">Employee List</h3>
+            <button class="add_employee button">Add Employee</button>
+            <div class="table_content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="th_id">Id</th>
+                            <th class="th_name">Name</th>
+                            <th class="th_email">Email</th>
+                            <th class="th_position">Position</th>
+                            <th class="th_actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tim Corey</td>
+                            <td>tim.corey@gmail.com</td>
+                            <td>Manager</td>
+                            <td>
+                                <button id="edit" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <button id="delete" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                                        </path>
+                                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tim Corey</td>
+                            <td>tim.corey@gmail.com</td>
+                            <td>Manager</td>
+                            <td>
+                                <button id="edit" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <button id="delete" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                                        </path>
+                                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tim Corey</td>
+                            <td>tim.corey@gmail.com</td>
+                            <td>Manager</td>
+                            <td>
+                                <button id="edit" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <button id="delete" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                                        </path>
+                                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Tim Corey</td>
+                            <td>tim.corey@gmail.com</td>
+                            <td>Manager</td>
+                            <td>
+                                <button id="edit" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <button id="delete" class="icon_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                                        </path>
+                                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- confirm modal -->
+    <!-- <div class="confirm">
+        <div class="confirm_window">
+            <div class="con_title">
+                <p class="con_topic">Delete Confirmation</p>
+                <div class="con_close">
+                    <span id="con-close" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="con_ask">
+                <p class="con_question">Are you sure to delete this task?</p>
+            </div>
+            <div class="con_actions">
+                <button class="button con_yes" id="con-yes" role="button">Yes</button>
+                <button class="button con_no" id="con-no" role="button">No</button>
+            </div>
+        </div>
+    </div> -->
+    <!-- modal -->
+    <!-- <div class="modal">
+        <div class="modal_window">
+            <div class="mod_title">
+                <p class="mod_topic">Add Employee</p>
+                <div class="mod_close">
+                    <span id="mod-close" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="mod_content">
+                <form action="" id="myform">
+                    <div class="input_control">
+                        <input type="text" placeholder="Name">
+                        <span class="val_msg"></span>
+                    </div>
+                    <div class="input_control">
+                        <input type="text" placeholder="Email">
+                        <span class="val_msg"></span>
+                    </div>
+                    <div class="input_control">
+                        <input type="text" placeholder="Position">
+                        <span class="val_msg"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="mod_actions">
+                <button class="button" id="mod-save" type="submit" form="myform" role="button">Save</button>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

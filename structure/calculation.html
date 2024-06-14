@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+    <title>Employee</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="header_content container flex">
+            <h3 class="app_logo">ASSESSMENT</h3>
+            <div class="pages">
+                <a href="#?" class="pg_link link_button" role="link">Home</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- calculation -->
+        <section class="section container">
+            <h3 class="section_tit">Working days calculation</h3>
+            <div class="calculation">
+                <div class="grid">
+                    <form action="">
+                        <div>
+                            <p>Start Date</p>
+                            <div class="start_date">
+                                <div class="input_control">
+                                    <input type="number" id="day" placeholder="DD">
+                                    <input type="number" id="mon" placeholder="MM">
+                                    <input type="number" id="year" placeholder="YYYY">
+                                </div>
+                                <span class="val_msg">Test validation</span>
+                            </div>
+                            <p>End Date</p>
+                            <div class="end_date">
+                                <div class="input_control">
+                                    <input type="number" id="day" placeholder="DD">
+                                    <input type="number" id="mon" placeholder="MM">
+                                    <input type="number" id="year" placeholder="YYYY">
+                                </div>
+                                <span class="val_msg"></span>
+                            </div>
+                        </div>
+                        <button class="button">Calculate</button>
+                    </form>
+                    <div class="calc_result">
+                        <p>Number of working days</p>
+                        <h3 class="cal_result">1</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

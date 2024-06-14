@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Calculation";
+}
+
+<!-- calculation -->
+<section class="section container">
+    <h3 class="section_tit">Working days calculation</h3>
+    <div class="calculation">
+        <div class="grid">
+            <form action="#?" id="calcform">
+                <div>
+                    <p>Start Date</p>
+                    <div class="start_date">
+                        <div class="input_control">
+                            <input type="text" id="st-day" value="13" placeholder="DD">
+                            <input type="text" id="st-mon" value="02" placeholder="MM">
+                            <input type="text" id="st-year" value="2023" placeholder="YYYY">
+                        </div>
+                        <span id="start-validate" class="val_msg"></span>
+                    </div>
+                    <p>End Date</p>
+                    <div class="end_date">
+                        <div class="input_control">
+                            <input type="text" id="ed-day" value="13" placeholder="DD">
+                            <input type="text" id="ed-mon" value="02" placeholder="MM">
+                            <input type="text" id="ed-year" value="2023" placeholder="YYYY">
+                        </div>
+                        <span id="end-validate" class="val_msg"></span>
+                    </div>
+                </div>
+                <button id="calculate" class="button">Calculate</button>
+            </form>
+            <div class="calc_result">
+                <p>Number of working days</p>
+                <h3 id="cal-result" class="cal_result">0</h3>
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts{
+    <script type="module" src="~/Scripts/calculation.js"></script>
+}
