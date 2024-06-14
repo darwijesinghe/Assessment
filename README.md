@@ -1,4 +1,4 @@
-# Assigna
+# Assessment
 
 ## Project Purpose
 
